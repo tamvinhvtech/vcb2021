@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "44bb904b-1a57-4015-967c-cb988327226f",
+		"name": "VCB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Kiểm tra lịch sử giao dịch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"begin\": \"06/07/2020\",\r\n    \"end\": \"06/08/2020\",\r\n    \"username\": \"ten_dang_nhap\",\r\n    \"password\": \"mat_khau\",\r\n    \"accountNumber\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9898/api/vcb/transactions",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"api",
+						"vcb",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Lấy danh sách giao dịch từ ngân hàng | Lấy giao dịch theo tài khoản cụ thể",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vcb/transactions?from=2020-05-13&to=2020-05-27&accountNumber=0161001667502",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vcb",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2020-05-13"
+								},
+								{
+									"key": "to",
+									"value": "2020-05-27"
+								},
+								{
+									"key": "accountNumber",
+									"value": "0161001667502"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7047"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b87-1yMG3PIfSk6r872I4GRoyw+Uwk0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 20:15:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"transactions\": [\n        {\n            \"id\": 30,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 1000000,\n            \"content\": \"IBVCB.1505200050239001.NGUYEN THANH DONG.groupntdcpalead\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5050 - 09443\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 29,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"479304.150520.095530.Raisim bacxdno1\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 79309\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 28,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"258974.150520.143110.46484huudinh888\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 34430\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 27,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 6500000,\n            \"content\": \"379207.150520.143128.TRAN LUYEN MUA 10K YAHOO-150520-14:31:27 379207\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 34650\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 26,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 100000,\n            \"content\": \"MBVCB409268134.Raisim duong1983.CT tu 0691000382655 NGUYEN VAN DUONG toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5078 - 18320\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 25,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"IBVCB.1505200529039001.HOANG VAN MAO.Raisim gaunhoibom\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5050 - 53972\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 23,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 5100000,\n            \"content\": \"594555.150520.173928.Vu ck FT20136807570275\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 68784\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 24,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 200000,\n            \"content\": \"606131.150520.162730.Raisim vuanhtu\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 18617\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 22,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 900000,\n            \"content\": \"600860.150520.175133.12793vietanh272 FT20136224043307\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 76263\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 21,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 20000,\n            \"content\": \"082553.150520.182708.5632183045 Chuyen qua MoMo 53125hldz26407\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 95486\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 20,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 10000,\n            \"content\": \"118695.150520.220050.Raisim tungpro\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 94589\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 19,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 200000,\n            \"content\": \"MBVCB409718265.raisim.tiendinh0612.CT tu 0691000353571 NGUYEN TIEN DINH toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5078 - 87829\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 18,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 20000,\n            \"content\": \"IBVCB.1505201002097003.TRUONG TAT THANH PHUOC.7HIDWQ\",\n            \"transactionDay\": \"2020-05-16\",\n            \"soThamChieu\": \"5050 - 01362\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:45:05.000Z\",\n            \"create_at\": \"2020-05-15T16:45:05.000Z\"\n        },\n        {\n            \"id\": 17,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"IBVCB.1505200853891004.TRUONG TAT THANH PHUOC.Y1V1JT\",\n            \"transactionDay\": \"2020-05-16\",\n            \"soThamChieu\": \"5050 - 02284\",\n            \"isUsed\": 1,\n            \"update_at\": \"2020-05-15T16:45:14.000Z\",\n            \"create_at\": \"2020-05-15T16:45:05.000Z\"\n        },\n        {\n            \"id\": 16,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"IBVCB.1305200265899001.DOAN VAN CUONG.Raisim doancuong\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5050 - 03931\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 15,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 200000,\n            \"content\": \"235477.130520.101510.51425xuanhoang\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5091 - 11153\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 14,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 500000,\n            \"content\": \"IBVCB.1305201041737004.NGUYEN THANH DONG.groupntdcpalead\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5050 - 25663\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 13,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 500000,\n            \"content\": \"589463.130520.150641.Raisim kienchivas FT20134021615005\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5091 - 70992\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 12,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 100000,\n            \"content\": \"MBVCB407591499.88373dinhtanphuoc.CT tu 0561000622900 DINH TAN PHUOC toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 59609\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 11,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"MBVCB407654388.raisim linhtundangcuoi.CT tu 0291000319461 NGUYEN VIET LINH toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 84248\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 10,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 1000000,\n            \"content\": \"MBVCB407715919.raisim hoangdinh.CT tu 0821000124820 HOANG DINH THAN toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 07935\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 9,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"MBVCB407946096.raisim.tiendinh0612.CT tu 0691000353571 NGUYEN TIEN DINH toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 97469\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 8,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 100000,\n            \"content\": \"987137.140520.134508.raisim hoanguyen FT20135595042190\",\n            \"transactionDay\": \"2020-05-14\",\n            \"soThamChieu\": \"5091 - 06748\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 7,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 3388000,\n            \"content\": \"128534.140520.180339.Anghiguihai FT20135022178970\",\n            \"transactionDay\": \"2020-05-14\",\n            \"soThamChieu\": \"5091 - 65586\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 6,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 2000000,\n            \"content\": \"976176.140520.201055.Raisim thinhabyss\",\n            \"transactionDay\": \"2020-05-14\",\n            \"soThamChieu\": \"5091 - 22687\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Lấy danh sách giao dịch từ ngân hàng | Lấy tất cả các tài khoản",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vcb/transactions?from=2020-05-13&to=2020-05-27",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vcb",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2020-05-13"
+								},
+								{
+									"key": "to",
+									"value": "2020-05-27"
+								},
+								{
+									"key": "accountNumber",
+									"value": "0161001667502",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7070"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b9e-OnjtIVh1c7Wp5l8oRVWI2OMqpEk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 20:17:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"transactions\": [\n        {\n            \"id\": 30,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 1000000,\n            \"content\": \"IBVCB.1505200050239001.NGUYEN THANH DONG.groupntdcpalead\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5050 - 09443\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 29,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"479304.150520.095530.Raisim bacxdno1\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 79309\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 28,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"258974.150520.143110.46484huudinh888\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 34430\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 27,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 6500000,\n            \"content\": \"379207.150520.143128.TRAN LUYEN MUA 10K YAHOO-150520-14:31:27 379207\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 34650\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 26,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 100000,\n            \"content\": \"MBVCB409268134.Raisim duong1983.CT tu 0691000382655 NGUYEN VAN DUONG toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5078 - 18320\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 25,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"IBVCB.1505200529039001.HOANG VAN MAO.Raisim gaunhoibom\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5050 - 53972\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 23,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 5100000,\n            \"content\": \"594555.150520.173928.Vu ck FT20136807570275\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 68784\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 24,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 200000,\n            \"content\": \"606131.150520.162730.Raisim vuanhtu\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 18617\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 22,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 900000,\n            \"content\": \"600860.150520.175133.12793vietanh272 FT20136224043307\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 76263\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 21,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 20000,\n            \"content\": \"082553.150520.182708.5632183045 Chuyen qua MoMo 53125hldz26407\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 95486\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 20,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 10000,\n            \"content\": \"118695.150520.220050.Raisim tungpro\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5091 - 94589\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 19,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 200000,\n            \"content\": \"MBVCB409718265.raisim.tiendinh0612.CT tu 0691000353571 NGUYEN TIEN DINH toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-15\",\n            \"soThamChieu\": \"5078 - 87829\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T17:00:20.000Z\",\n            \"create_at\": \"2020-05-15T17:00:20.000Z\"\n        },\n        {\n            \"id\": 18,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 20000,\n            \"content\": \"IBVCB.1505201002097003.TRUONG TAT THANH PHUOC.7HIDWQ\",\n            \"transactionDay\": \"2020-05-16\",\n            \"soThamChieu\": \"5050 - 01362\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:45:05.000Z\",\n            \"create_at\": \"2020-05-15T16:45:05.000Z\"\n        },\n        {\n            \"id\": 17,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"IBVCB.1505200853891004.TRUONG TAT THANH PHUOC.Y1V1JT\",\n            \"transactionDay\": \"2020-05-16\",\n            \"soThamChieu\": \"5050 - 02284\",\n            \"isUsed\": 1,\n            \"update_at\": \"2020-05-15T16:45:14.000Z\",\n            \"create_at\": \"2020-05-15T16:45:05.000Z\"\n        },\n        {\n            \"id\": 16,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"IBVCB.1305200265899001.DOAN VAN CUONG.Raisim doancuong\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5050 - 03931\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 15,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 200000,\n            \"content\": \"235477.130520.101510.51425xuanhoang\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5091 - 11153\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 14,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 500000,\n            \"content\": \"IBVCB.1305201041737004.NGUYEN THANH DONG.groupntdcpalead\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5050 - 25663\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 13,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 500000,\n            \"content\": \"589463.130520.150641.Raisim kienchivas FT20134021615005\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5091 - 70992\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 12,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 100000,\n            \"content\": \"MBVCB407591499.88373dinhtanphuoc.CT tu 0561000622900 DINH TAN PHUOC toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 59609\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 11,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"MBVCB407654388.raisim linhtundangcuoi.CT tu 0291000319461 NGUYEN VIET LINH toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 84248\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 10,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 1000000,\n            \"content\": \"MBVCB407715919.raisim hoangdinh.CT tu 0821000124820 HOANG DINH THAN toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 07935\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 9,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 50000,\n            \"content\": \"MBVCB407946096.raisim.tiendinh0612.CT tu 0691000353571 NGUYEN TIEN DINH toi 0161001667502 TRAN VAN HAI\",\n            \"transactionDay\": \"2020-05-13\",\n            \"soThamChieu\": \"5078 - 97469\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 8,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 100000,\n            \"content\": \"987137.140520.134508.raisim hoanguyen FT20135595042190\",\n            \"transactionDay\": \"2020-05-14\",\n            \"soThamChieu\": \"5091 - 06748\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 7,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 3388000,\n            \"content\": \"128534.140520.180339.Anghiguihai FT20135022178970\",\n            \"transactionDay\": \"2020-05-14\",\n            \"soThamChieu\": \"5091 - 65586\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        },\n        {\n            \"id\": 6,\n            \"accountNumber\": \"0161001667502\",\n            \"amount\": 2000000,\n            \"content\": \"976176.140520.201055.Raisim thinhabyss\",\n            \"transactionDay\": \"2020-05-14\",\n            \"soThamChieu\": \"5091 - 22687\",\n            \"isUsed\": 0,\n            \"update_at\": \"2020-05-15T16:15:35.000Z\",\n            \"create_at\": \"2020-05-15T16:15:35.000Z\"\n        }\n    ],\n    \"totalPage\": 2,\n    \"page\": 1\n}"
+				},
+				{
+					"name": "Lấy danh sách giao dịch từ ngân hàng",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vcb/transactions?begin=27/05/2020&end=27/07/2020&accountNumber=0121000839335",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vcb",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "begin",
+									"value": "27/05/2020"
+								},
+								{
+									"key": "end",
+									"value": "27/07/2020"
+								},
+								{
+									"key": "accountNumber",
+									"value": "0121000839335"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2386"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"952-MDhpSuGcjGwn87qfg8nfdCNIxnc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Jul 2020 06:14:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"transactions\": [\n        {\n            \"TransactionDate\": \"25/07/2020\",\n            \"Reference\": \"9701 - 0001341707\",\n            \"CD\": \"+\",\n            \"Amount\": \"4\",\n            \"Description\": \"INTEREST PAYMENT\",\n            \"PCTime\": \"10049\"\n        },\n        {\n            \"TransactionDate\": \"06/07/2020\",\n            \"Reference\": \"5050 - 93989\",\n            \"CD\": \"+\",\n            \"Amount\": \"1,000\",\n            \"Description\": \"IBVCB.0607200337115011.NGUYEN KHANH LINH.test 2\",\n            \"PCTime\": \"135641\"\n        },\n        {\n            \"TransactionDate\": \"06/07/2020\",\n            \"Reference\": \"5050 - 64766\",\n            \"CD\": \"+\",\n            \"Amount\": \"1,000\",\n            \"Description\": \"IBVCB.0607200633797007.NGUYEN KHANH LINH.test 2\",\n            \"PCTime\": \"101225\"\n        },\n        {\n            \"TransactionDate\": \"05/07/2020\",\n            \"Reference\": \"9917 - 55110\",\n            \"CD\": \"-\",\n            \"Amount\": \"11,000\",\n            \"Description\": \"THU PHI DICH VU INTERNET BANKING THANG 06/2020. SO TIEN 11000 VND\",\n            \"PCTime\": \"102405\"\n        },\n        {\n            \"TransactionDate\": \"01/07/2020\",\n            \"Reference\": \"9401 - 0001341707\",\n            \"CD\": \"-\",\n            \"Amount\": \"2,200\",\n            \"Description\": \"THU PHI QLTK CA NHAN- VND\",\n            \"PCTime\": \"231011\"\n        },\n        {\n            \"TransactionDate\": \"25/06/2020\",\n            \"Reference\": \"9701 - 0001341707\",\n            \"CD\": \"+\",\n            \"Amount\": \"6\",\n            \"Description\": \"INTEREST PAYMENT\",\n            \"PCTime\": \"225254\"\n        },\n        {\n            \"TransactionDate\": \"08/06/2020\",\n            \"Reference\": \"5055 - 83508\",\n            \"CD\": \"-\",\n            \"Amount\": \"1,600,000\",\n            \"Description\": \"IBVCB.0806200128871003.616228.IBCN.hello\",\n            \"PCTime\": \"93023\"\n        },\n        {\n            \"TransactionDate\": \"08/06/2020\",\n            \"Reference\": \"5050 - 96629\",\n            \"CD\": \"+\",\n            \"Amount\": \"1,600,000\",\n            \"Description\": \"IBVCB.0806200899637001.TRAN DINH NGUYEN.\",\n            \"PCTime\": \"73703\"\n        },\n        {\n            \"TransactionDate\": \"06/06/2020\",\n            \"Reference\": \"9917 - 66414\",\n            \"CD\": \"-\",\n            \"Amount\": \"11,000\",\n            \"Description\": \"THU PHI DICH VU INTERNET BANKING THANG 05/2020. SO TIEN 11000 VND\",\n            \"PCTime\": \"160803\"\n        },\n        {\n            \"TransactionDate\": \"01/06/2020\",\n            \"Reference\": \"9401 - 0001341707\",\n            \"CD\": \"-\",\n            \"Amount\": \"2,200\",\n            \"Description\": \"THU PHI QLTK CA NHAN- VND\",\n            \"PCTime\": \"230509\"\n        },\n        {\n            \"TransactionDate\": \"31/05/2020\",\n            \"Reference\": \"5055 - 78324\",\n            \"CD\": \"-\",\n            \"Amount\": \"1,000,000\",\n            \"Description\": \"IBVCB.3105200796035002.314448.IBCN.hello\",\n            \"PCTime\": \"131101\"\n        },\n        {\n            \"TransactionDate\": \"31/05/2020\",\n            \"Reference\": \"5050 - 87770\",\n            \"CD\": \"+\",\n            \"Amount\": \"1,000,000\",\n            \"Description\": \"IBVCB.3105200162245001.TRAN DINH NGUYEN.thanh toan viet tool cho TAI\",\n            \"PCTime\": \"3348\"\n        },\n        {\n            \"TransactionDate\": \"30/05/2020\",\n            \"Reference\": \"5050 - 93725\",\n            \"CD\": \"+\",\n            \"Amount\": \"1,000,000\",\n            \"Description\": \"IBVCB.2905200312943001.TRAN DINH NGUYEN.coc viet tool\",\n            \"PCTime\": \"234250\"\n        },\n        {\n            \"TransactionDate\": \"30/05/2020\",\n            \"Reference\": \"5055 - 62935\",\n            \"CD\": \"-\",\n            \"Amount\": \"1,005,500\",\n            \"Description\": \"IBVCB.3005200184709001.299194.IBCN.gui tai\",\n            \"PCTime\": \"182426\"\n        }\n    ],\n    \"nextIndex\": \"-1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Tranfer money 247 (Chuyển tiền nhanh 247)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"username_of_vcb_digital\",\r\n    \"password\": \"password_of_vcb_digital\",\r\n    \"tranfer_to\": \"1482597_accountnumber_to_send_money\",\r\n    \"bank_code\": \"970416_get_from_GET\",\r\n    \"amount\": 1000,\r\n    \"content\": \"content_to_tranfer\",\r\n    \"feeType\": \"1\", // 1: sender pay || 2: receiver pay, default: \"1\"\r\n    \"accountNumber\": \"\" //if need to send by special account number, default: \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9898/api/vcb/tranfer247",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"api",
+						"vcb",
+						"tranfer247"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get \"bank_code\" for tranfer 247 (Lấy danh sách bankcode ngân hàng chuyển tiền)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9898/api/vcb/bankcode_tranfer247",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"api",
+						"vcb",
+						"bankcode_tranfer247"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get \"bank_code\" for tranfer 247 (Lấy danh sách bankcode ngân hàng chuyển tiền)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vcb/bankcode_tranfer247",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vcb",
+								"bankcode_tranfer247"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5236"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1474-lkyANYlADmjDj/dMPVBudlyPiMQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Aug 2020 02:28:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"banks\": [\n        {\n            \"bankCode\": \"970405\",\n            \"bankName\": \"NNO&PT NONG THON VN (AGRIBANK)\",\n            \"bankNameEN\": \"NNO&PT NONG THON VN (AGRIBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970418\",\n            \"bankName\": \"DAU TU VA PHAT TRIEN VN (BIDV)\",\n            \"bankNameEN\": \"DAU TU VA PHAT TRIEN VN (BIDV)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970415\",\n            \"bankName\": \"CONG THUONG VN (VIETINBANK)\",\n            \"bankNameEN\": \"CONG THUONG VN (VIETINBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970432\",\n            \"bankName\": \"VIET NAM THINH VUONG (VP BANK)\",\n            \"bankNameEN\": \"VIET NAM THINH VUONG (VP BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970416\",\n            \"bankName\": \"A CHAU (ACB)\",\n            \"bankNameEN\": \"A CHAU (ACB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970425\",\n            \"bankName\": \"AN BINH (ABBANK)\",\n            \"bankNameEN\": \"AN BINH (ABBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970409\",\n            \"bankName\": \"BAC A (BAC A BANK)\",\n            \"bankNameEN\": \"BAC A (BAC A BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970454\",\n            \"bankName\": \"BAN VIET (VIET CAPITAL BANK)\",\n            \"bankNameEN\": \"BAN VIET (VIET CAPITAL BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970438\",\n            \"bankName\": \"BAO VIET (BAO VIET BANK)\",\n            \"bankNameEN\": \"BAO VIET (BAO VIET BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970449\",\n            \"bankName\": \"BUU DIEN LIEN VIET (LIEN VIET POST BANK)\",\n            \"bankNameEN\": \"BUU DIEN LIEN VIET (LIEN VIET POST BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"422589\",\n            \"bankName\": \"CIMB BANK\",\n            \"bankNameEN\": \"CIMB BANK\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970412\",\n            \"bankName\": \"DAI CHUNG (PVCOMBANK)\",\n            \"bankNameEN\": \"DAI CHUNG (PVCOMBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970414\",\n            \"bankName\": \"DAI DUONG (OCEANBANK)\",\n            \"bankNameEN\": \"DAI DUONG (OCEANBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970408\",\n            \"bankName\": \"DAU KHI TOAN CAU (GPBANK)\",\n            \"bankNameEN\": \"DAU KHI TOAN CAU (GPBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970406\",\n            \"bankName\": \"DONG A (DONG A BANK)\",\n            \"bankNameEN\": \"DONG A (DONG A BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970440\",\n            \"bankName\": \"DONG NAM A (SEABANK)\",\n            \"bankNameEN\": \"DONG NAM A (SEABANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970426\",\n            \"bankName\": \"HANG HAI (MARITIME BANK)\",\n            \"bankNameEN\": \"HANG HAI (MARITIME BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970442\",\n            \"bankName\": \"HONG LEONG VN\",\n            \"bankNameEN\": \"HONG LEONG VN\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970434\",\n            \"bankName\": \"INDOVINA BANK\",\n            \"bankNameEN\": \"INDOVINA BANK\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970455\",\n            \"bankName\": \"INDUSTRIAL BANK OF KOREA\",\n            \"bankNameEN\": \"INDUSTRIAL BANK OF KOREA\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970452\",\n            \"bankName\": \"KIEN LONG (KIEN LONG BANK)\",\n            \"bankNameEN\": \"KIEN LONG (KIEN LONG BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970407\",\n            \"bankName\": \"KY THUONG VN (TECHCOMBANK)\",\n            \"bankNameEN\": \"KY THUONG VN (TECHCOMBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970421\",\n            \"bankName\": \"LIEN DOANH VIET NGA (VRB)\",\n            \"bankNameEN\": \"LIEN DOANH VIET NGA (VRB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970428\",\n            \"bankName\": \"NAM A (NAM A BANK)\",\n            \"bankNameEN\": \"NAM A (NAM A BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970437\",\n            \"bankName\": \"PHAT TRIEN TP HCM (HD BANK)\",\n            \"bankNameEN\": \"PHAT TRIEN TP HCM (HD BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970448\",\n            \"bankName\": \"PHUONG DONG (OCB)\",\n            \"bankNameEN\": \"PHUONG DONG (OCB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970439\",\n            \"bankName\": \"PUBLIC BANK VN\",\n            \"bankNameEN\": \"PUBLIC BANK VN\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970422\",\n            \"bankName\": \"QUAN DOI (MB)\",\n            \"bankNameEN\": \"QUAN DOI (MB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970419\",\n            \"bankName\": \"QUOC DAN (NCB)\",\n            \"bankNameEN\": \"QUOC DAN (NCB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970441\",\n            \"bankName\": \"QUOC TE (VIB)\",\n            \"bankNameEN\": \"QUOC TE (VIB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970429\",\n            \"bankName\": \"SAI GON (SCB)\",\n            \"bankNameEN\": \"SAI GON (SCB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970443\",\n            \"bankName\": \"SAI GON - HA NOI (SHB)\",\n            \"bankNameEN\": \"SAI GON - HA NOI (SHB)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970400\",\n            \"bankName\": \"SAI GON CONG THUONG (SAIGONBANK)\",\n            \"bankNameEN\": \"SAI GON CONG THUONG (SAIGONBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970403\",\n            \"bankName\": \"SAI GON THUONG TIN (SACOMBANK)\",\n            \"bankNameEN\": \"SAI GON THUONG TIN (SACOMBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970424\",\n            \"bankName\": \"SHINHAN VN\",\n            \"bankNameEN\": \"SHINHAN VN\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970423\",\n            \"bankName\": \"TIEN PHONG (TIEN PHONG BANK)\",\n            \"bankNameEN\": \"TIEN PHONG (TIEN PHONG BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970458\",\n            \"bankName\": \"UOB VIETNAM (UOB VN)\",\n            \"bankNameEN\": \"UOB VIETNAM (UOB VN)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970427\",\n            \"bankName\": \"VIET A (VIET A BANK)\",\n            \"bankNameEN\": \"VIET A (VIET A BANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970433\",\n            \"bankName\": \"VIET NAM THUONG TIN (VIETBANK)\",\n            \"bankNameEN\": \"VIET NAM THUONG TIN (VIETBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970457\",\n            \"bankName\": \"WOORI BANK VIET NAM\",\n            \"bankNameEN\": \"WOORI BANK VIET NAM\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970430\",\n            \"bankName\": \"XANG DAU PETROLIMEX (PGBANK)\",\n            \"bankNameEN\": \"XANG DAU PETROLIMEX (PGBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        },\n        {\n            \"bankCode\": \"970431\",\n            \"bankName\": \"XUAT NHAP KHAU (EXIMBANK)\",\n            \"bankNameEN\": \"XUAT NHAP KHAU (EXIMBANK)\",\n            \"level\": \"1\",\n            \"fastTrans\": \"1\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Tranfer money in local VCB (Chuyển tiền qua TK VCB)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"username_of_vcb_digital\",\r\n    \"password\": \"password_of_vcb_digital\",\r\n    \"tranfer_to\": \"1482597_accountnumber_to_send_money\",\r\n    \"amount\": 1000,\r\n    \"content\": \"content_to_tranfer\",\r\n    \"feeType\": \"1\", // 1: sender pay || 2: receiver pay, default: \"1\"\r\n    \"accountNumber\": \"\" //if need to send by special account number, default: \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9898/api/vcb/tranfer_local",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"api",
+						"vcb",
+						"tranfer_local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm tranfer money (Xác nhận chuyển tiền)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"username_of_vcb_digital\",\r\n    \"password\": \"password_of_vcb_digital\",\r\n    \"tranId\": \"from_tranfer_response\",\r\n    \"otp\": \"otp_from_phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9898/api/vcb/confirm_tranfer",
+					"host": [
+						"localhost"
+					],
+					"port": "9898",
+					"path": [
+						"api",
+						"vcb",
+						"confirm_tranfer"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

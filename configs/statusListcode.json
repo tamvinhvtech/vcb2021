@@ -1,0 +1,21 @@
+{
+    "1023": "POST request bị thiếu thông tin.",
+    "1024": "Tên đăng nhập và Mật khẩu không được để trống.",
+    "1025": "Không gửi DATA lên thì lấy gì mà xử lý cha @@",
+    "1026": "Cho mình xin thời gian địa điểm rõ ràng đi pro.",
+    "0000": "Lỗi không xác định",
+    "1027": "Bad Request",
+    "1028": "Người dùng đã tồn tại",
+    "1029": "Không thể tạo tài khoản mới. Vui lòng kiểm tra database",
+    "403": "Không được phép truy cập",
+    "1030": "Lỗi truy vấn databse",
+    "1031": "Người dùng không tồn tại",
+    "1032": "Vui lòng kiểm tra lại Tên đăng nhập hoặc Mật khẩu",
+    "500": "Lỗi hệ thống",
+    "1033": "Không cập nhật được dữ liệu vào database",
+    "1034": "Tài khoản không tồn tại",
+    "1035": "Hết hạn sử dụng",
+    "1036": "Thiết bị này chưa được đăng ký",
+    "1037": "Không đủ số lượng IP",
+    "1038": "Lỗi khi tìm kiếm thiết bị"
+}
